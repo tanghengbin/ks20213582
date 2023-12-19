@@ -1,0 +1,208 @@
+    1   cd
+    2  cd/
+    3  cd
+    4  cd/
+    5  cd
+    6  cd
+    7  cd
+    8  cd
+    9  cd /
+   10  ls
+   11  md TangHBin
+   12  md TangHbin /
+   13  md / TangHBin
+   14  mkdir TangHB
+   15  cd / TangHB
+   16  cd TangHB
+   17  ls D:\摄像
+   18  ls
+   19  ls D:\摄像
+   20  history 
+   21  ls /D:/摄像
+   22  ls D
+   23  ls D:
+   24  ls D:/
+   25  ls D:/摄像/
+   26  cp D:/摄像/原神 2022_10_25 16_30_57 .
+   27  ls D:/摄像/
+   28  cp D:/摄像/THB/ .
+   29  cp D:/摄像/THB .
+   30  cp D:/摄像/THB.jpg/ .
+   31  cp D:/摄像/THB.jpg .
+   32  ls
+   33  rm THB.jpg 
+   34  ls
+   35  cp D:/摄像/THB.jpg .
+   36  ls
+   37  rm THB.jpg 
+   38  ls
+   39  cp D:/摄像/* . -r
+   40  ls
+   41  history 
+   42  rm *
+   43  ls
+   44  cp D:\* . -r
+   45  cp D:/* . -r
+   46  cd TangHB
+   47  ls
+   48  rm * -r
+   49  ls
+   50  cp D:/摄像/THB.jpg .
+   51  ls
+   52  ls
+   53  history 
+   54  cp D:/摄像/崩坏: 星穹铁道 2023-08-22 22-35-24.mp4 .
+   55  cp D:/摄像/123.mp4 .
+   56  ls
+   57  rm 123.mp4
+   58  ls
+   59  mkdir make
+   60  ls
+   61  cp D:/摄像/123.mp4 ./make
+   62  ls
+   63  ls /make
+   64  ls ./lame
+   65  ls ./make
+   66  history 
+   67  ls
+   68  rm make
+   69  rm make -r
+   70  ls
+   71  cd /
+   72  history > 20213582-2023-09-06.txt
+   73  mkdir make/make1
+   74  mkdir make
+   75  ls
+   76  rm make -r
+   77  ls
+   78  cd TangHB
+   79  history 
+   80  cd -- help
+   81  cp --help
+   82  cd --help
+   83  ls -a
+   84  history 
+   85  his
+   86  history 
+   87  history > 20213582-2023-09-06.txt
+   88  history 
+   89  rm 20213582-2023-09-06.txt
+   90  cd /
+   91  history  > 20213582-2023-09-06.txt
+   92  exit
+   93  history 
+   94  cd TangHB
+   95  ls
+   96  history > 20213582-2032-09-06.txt
+   97  cd \
+   98  cd /
+   99  paw
+  100  pwa
+  101  date
+  102  cd TangHB
+  103  mkdir THB
+  104  ls
+  105  history 
+  106  rm THB
+  107  rm THB -r
+  108  ls
+  109  cd /
+  110  history > 20213582-2023-09-06.txt
+  111  exit
+  112  who
+  113  whoami.exe 
+  114  cd
+  115  cd cd /
+  116  cd /
+  117  ls
+  118  cd 
+  119  cd /
+  120  cd ..
+  121  cd .
+  122  cd /..
+  123  ls D:/
+  124  ls /d
+  125  cd /Git
+  126  cd /
+  127  cd /TangHB
+  128  ls
+  129  mkdir mp3
+  130  ls
+  131  rm mp3 -r
+  132  ls
+  133  ls /d/*.mp3
+  134  mv /d/*.mp3 .
+  135  ls
+  136  ls /d/*.mp3
+  137  mkdir mp3
+  138  mv *.pdf /mp3
+  139  mv *.mp3 /mp3
+  140  ls
+  141  mv *.mp3 mp3
+  142  ls
+  143  ls /c/用户/lenovo/桌面
+  144  ls /c/用户/Lenovo/桌面
+  145  ls /c/Users/Lenovo/Desktop
+  146  ls
+  147  ls /
+  148  ls /20213582-2023-09-06.txt  .
+  149  mv /20213582-2023-09-06.txt .
+  150  ls
+  151  cat 20213582-2023-09-06.txt 
+  152  history > 20213582-2023-09-06.txt 
+  153  cat 20213582-2023-09-06.txt 
+  154  ls -R
+  155  cp . /c/Users/Lenovo/Desktop
+  156  cp / 
+  157  cp /
+  158  cd /
+  159  cp /TangHB /c/Users/desktop.ini 
+  160  cp /TangHB /c/Users/desktop.ini -r
+  161  cp /TangHB /c/Users/Deektop -r
+  162  cp /TangHB /c/Users/Lenovo/Deektop -r
+  163  ls /c/Users/Lenovo/Desktop
+  164  cd /c/Users/Lenovo/Desktop/TangHB
+  165  ls /c/Users/Lenovo/Deektop
+  166  mv /c/Users/Lenovo/Deektop/ /c/Users/Lenovo/Desktop/TangHB
+  167  cd /c/Users/Lenovo/Desktop
+  168  ls
+  169  ls TangHB/
+  170  cd /
+  171  ls TangHB/
+  172  cd TangHB/
+  173  history > 20213582-2023-09-06.txt 
+  174  cat 20213582-2023-09-06.txt 
+  175  pwd
+  176  cd /c/Users/Lenovo/Desktop
+  177  pwd
+  178  cd
+  179  pwd
+  180  cd /TangHB/
+  181  mv mp3 mp3\(1\)
+  182  mv
+  183  mv mp3\(1\) mp3
+  184  history 
+  185  ls /d/*.pdf
+  186  mv /d/*.pdf .
+  187  ls
+  188  ls mp3
+  189  ls /d/*.pdf
+  190  history 
+  191  mkdir mp4
+  192  ls
+  193  rm mp4 -r
+  194  ls
+  195  history 
+  196  mkdir mp4
+  197  cp 20213582-2023-09-06.txt mp4
+  198  ls mp4
+  199  rm mp4 -r
+  200  ls
+  201  history 
+  202  rm --help
+  203  ls
+  204  history > 20213582-2023-09-06.txt 
+  205  cat 20213582-2023-09-06.txt 
+  206  history > 20213582-2023-09-06.txt 
+  207  ls
+  208  history > 20213582-2023-09-06.txt 

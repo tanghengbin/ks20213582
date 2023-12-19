@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css">
+    div
+	{
+		width:1000px;
+	   background-color:grey;
+	   font-size:20px;
+       /*text-align:center;*/
+
+	}
+	h1
+	 {
+		font-size:60px;
+		text-align:center;
+		color:red; 
+      }
+	h2
+	 {
+		font-size:40px;
+
+	 }
+	 p
+	 {
+		font-size:25px;
+	 }
+	 strong
+	 {
+		font-size:20px;
+	 }
+	 li
+	 {
+		font-size:20px;
+	 }
+  </style>
+  <title>第四节Linux作业</title>
+ </head>
+ <body>
+	<h1>第四节Linux作业</h1>
+	<h2>简介</h2>
+	<p>
+		再次学习并对一些命令有所了解，比如ipconfig、ping、tracert、curl、grep、wc<br>
+		cut等命令，对网络有了更深的理解，同时也了解了查询和统计的一些命令，对<br>
+		文件的操作更加得心应手。
+	</p>
+	<h2>操作总结</h2>
+	<ul>
+		<li><font size="6px">
+			ipconig:查看计算机当前所有的 TCP/IP 网络配置值
+		</font></li>
+			<strong>详细命令:</strong>
+			<ul>
+				<li>ipconfig/all：显示系统的完整配置。</li>
+				<li>ipconfig/registerdns：刷新所有 DHCP 租约并重新注册 DNS 名称。</li>
+				<li>ipconfig/displaydns：显示存储在 DNS 解析器缓存中的信息，它具有之前使用过的所有 DNS 信息。</li>
+				<li>ipconfig/showclassid adapter：显示适配器允许的所有类 ID。</li>
+				<li>ipconfig/setclassid adapter [classid]：用于修改DHCP class id。</li>
+				<li>ipconfig/release：通知服务器释放IP地址并使其可供其他人使用。</li>
+				<li>ipconfig/renew：请求一个新的 IP 地址。</li>
+				<li>ipconfig/flushdns：清除包含以前 DNS 信息的 DNS 解析器缓存。</li>
+			</ul>
+			<strong>ipconfig 和 ifconfig 之间的区别：</strong>
+			<ol>
+				<li>代表： ipconfig 代表 Internet 协议配置，而 ifconfig 代表接口配置。</li>
+				<li>简介： ipconfig 可用于控制台应用程序，该应用程序显示当前连接的网络设备的所有网络配置，<br>并可修改其 DHCP 和 DNS 设置。Ifconfig 是一个系统管理员实用程序，用于配置、控制和查询<br>系统的 TCP/IP 网络配置。
+				</li>
+				<li>支持的操作系统： ipconfig 命令受 Microsoft Windows 操作系统、React OS 和 Apple Mac OS 支持。<br>一些最新版本的 Linux 操作系统也支持 ipconfig。基于 Unix 的操作系统支持 ifconfig 命令。
+				</li>
+				<li>功能： ipconfig 命令显示所有当前连接的网络接口，无论它们是否处于活动状态。另一方面，ifconfig 命令仅显示连接到系统的已启用网络接口。</li>
+				<li>显示所有接口配置： ‘ipconfig/all’ 命令用于在 Microsoft Windows 操作系统中显示系统的所有网络配置，而在基于 Unix 的操作系统中使用 ‘ifconfig -a’ 命令。</li>
+			</ol>
+		<li><font size="6px">ping:检测网络是否通畅并显示延迟</font></li>
+		<strong>语法格式:</strong>
+		<div>
+			ping [参数] 主机或网关、域名
+		</div>
+		<strong>ping常用命令参数:</strong>
+			<ul>
+				<li>-4     ping ipv4 地址，默认IPv4</li>
+				<li>-6     ping ipv6 地址</li>
+				<li>-c       发送ping包的数量</li>
+			</ul>
+		<li><font size="6px">
+			tracert：路由跟踪程序，用于确定数据包到达目标所经过的路径
+			</font>
+		</li>
+		<strong>语法格式:</strong>
+		<div>
+			tracert [-d] [-h maximum_hops] [-j host-list] [-w timeout] [-R] [-S srcaddr] [-4] [-6] target_name
+		</div>
+		<strong>tracert常用命令参数:</strong>
+		<ul>
+			<li>-d：表示不让 tracert 根据节点主机名查找路由的 IP 地址，直接进行路由跟踪。当路由器不支持<br> ICMP/UDP/ICMPv6 数据包时，建议使用该选项</li>
+			<li>-h maximum_hops：指定最多经过多少个节点进行路由跟踪，默认值为 30。使用该选项可以更改该值。</li>
+			<li>-j host-list：枚举一个节点列表，并在路由跟踪过程中只走该列表中的节点。</li>
+			<li>-w timeout：设置等待每个回复消息的超时时间，默认值为 4000 毫秒。使用该选项可以更改该值。</li>
+			<li>-R：指示 tracert 跟踪路由时，使用“参考路由”而不是“严格源路由”。如果启用了该选项，则可以跨越某些无法到达的能够到达目标的路由器。</li>
+			<li>-S srcaddr：指定源地址。如果在单个计算机上安装了多个网络适配器，则使用该选项可以指定从哪个适配器发出路由跟踪请求。</li>
+			<li>-4：强制使用 IPv4 进行路由跟踪。</li>
+			<li>-6：强制使用 IPv6 进行路由跟踪</li>
+			<li>target_name：表示要查询的目标 IP 地址或主机名。</li>
+
+		</ul>
+		<li><font size="6px">curl:在命令行中利用URL进行数据或者文件传输</font></li>
+			<ul>
+				<li>CURL的功能非常强大，命令行参数多达几十种，我们可以通过修改CURL的参数用以获取不同的结果。<br>除此之外，我们也可以单独使用CURL，根据测试需求用它构造请求参数，构造多种接口测试场景</li>
+			</ul>
+		<li><font size="6px">grep:用于文件内容的搜索，返回所有匹配的行</font></li>
+		<strong>grep常用命令参数:</strong>
+			<ul>
+				<li>-i参数表示忽略大小写。</li>
+				<li>-r表示搜索某个目录下面的所有文件。</li>
+				<li>-v过滤包含某个词的行，即grep的逆操作。</li>
+			</ul>
+		<li><font size="6px">wc:统计文件的总行数</font></li>
+		<li><font size="6px">
+			cut:用于在命令行输出文本文件的指定位置的内容。
+		</font>
+		</li>
+			<strong>语法格式:</strong>
+		<div>			
+			cut OPTION [FILE]
+		</div>
+		<strong>cut常用命令参数:</strong>
+			<ul>
+				<li>-b参数用来指定读取的字节。</li>
+				<li>-c参数用来指定读取的字符，用法与-b一样。有的字符是多字节字符，这时候就应该用-c代替-b。</li>
+				<li>-d参数用来指定分隔符，默认分隔符为制表符。</li>
+				<li>-f参数用来指定字段。</li>
+			</ul>
+	</ul>
+ </body>
+</html>
